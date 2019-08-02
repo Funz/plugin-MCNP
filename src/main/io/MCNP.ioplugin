@@ -1,0 +1,20 @@
+variableStartSymbol=%
+variableLimit=(...)
+formulaStartSymbol=@
+formulaLimit={...}
+
+commentLineChar=$
+
+datasetFilter=contains("(.*)","KCODE") || contains("(.*)","kcode")
+
+outputlist=mean_keff sigma_keff
+outputfunctions=GaussianDensity:mean_keff,sigma_keff Numeric:mean_keff
+
+output.mean_keff.if=contains("(.*)","KCODE") | contains("(.*)","kcode")
+output.mean_keff.get=grep("outp"," the final estimated combined") >> get(0) >> cut("keff = ",2) >> substring("ZZZ","with an estimated") >> asNumeric()
+output.mean_keff.default=1.0
+
+output.sigma_keff.if=contains("(.*)","KCODE") | contains("(.*)","kcode")
+output.sigma_keff.get=grep("outp"," the final estimated combined") >> get(0) >> cut("standard deviation of",2)>> substring("ZZZ","|") >> asNumeric()
+output.sigma_keff.default=0.001
+

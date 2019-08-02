@@ -31,14 +31,14 @@ script:
 
 before_deploy:
   - ant clean dist
-  - cd dist; zip -r ../plugin-MyPlugin.zip *; cd ..
+  - cd dist; zip -r ../plugin-MCNP.zip *; cd ..
   - ant install
-  - zip -r Funz-MyPlugin.zip Funz-MyPlugin
+  - zip -r Funz-MCNP.zip Funz-MCNP
   
 deploy:
   provider: releases
   api_key:
-    secure: __PUT_YOUR_GITHUB_ACCESS_KEY_HERE__:_'travis_setup_releases_--force'_will_generate_a_correct_.travis.yml
+    secure: mlNKzzE5OPEZmN9LY0LMzNFhUktT23xD+RQcYDyR0hzKA44j0a+3V/uuQQPIjtY59AZ17KGjFFlMXdmMtnQAQR56XKkxB7iuyyTcZSdcmjyy1oSOJAUkcZkdPqov+CO4FURsMrNHgND01Y/0xFc2HtyBTrHYjYunU+MuA7wRfied0IyzTBtULKk9WRC9AmksUZSXatye7v5FEd4OqOHlBuXmG6Y98ftBx1r5WnLR3NHT1WJc81xYb4eQ7eppa3/RQMU+Kw9uEBPecmvsVGXWZUFYXgTKQiKrWJkmHjCL69a86io+iqULY1CEg86n4RsvrQXf5gr3GnoiKQwcmsfxPACq8NpcsTBwdEWHJ55M3FlyiCWj13P4PJfKt7iF5GodCK0n3aLm1bdS318XPMoZOt5aahTQbnV9MogG6rZn/gMLPUi8saLPWk9s4j6FhZda201Fiu0v2LwTsq5cSQfvLsLiiv6um9I3qN9rtN7R31oZ1XzCttP+eg2pux7HzSUf9wAvVULhcuADN3yupKXXVWs06NKgpY9bVrRdL2Ax639YBC8EQepVW9mUHK4NXtppWEaTq1gyTsnvSvqMZqWFxy+IMD2Cdm4DtkYhDsv4yxEsiFBDzmZZph0vwhSAJZ9p13cX9bdPn4W3gj+WSdoQw/KlALqNBH/3rM1znC6k0Ic=
   file_glob: true
   file:
     - Funz-*.zip

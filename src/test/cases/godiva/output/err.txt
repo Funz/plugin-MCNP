@@ -1,0 +1,4 @@
+dos2unix: i.mcnp: Aucun fichier ou dossier de ce type
+dos2unix: Skipping i.mcnp, not a regular file.
+rm: impossible de supprimer 'beats.png': Aucun fichier ou dossier de ce type
+python: can't open file '/produits/sec/OUTILS/Promethee_1.9/scripts/convert_mcnp_sens_238_.py': [Errno 2] No such file or directory
