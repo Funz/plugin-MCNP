@@ -28,8 +28,8 @@ It supports the following syntax and features:
         * r, expected to be around 8.71
 
   * Output
-    * file type supported: 'outp'
-    * read any named value printed with `=`, like `...`
+    * file type supported: '*o'
+    * read criticality values printed
     * example output file:
         ```
         ...
