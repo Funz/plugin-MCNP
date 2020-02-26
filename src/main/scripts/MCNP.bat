@@ -1,7 +1,7 @@
 @echo on
 
-PATH="c:\MCNP\MCNP6\bin\windows";%PATH%
-DATAPATH="c:\MCNP\MCNP_DATA"
+set PATH="c:\MCNP\MCNP6\bin\windows";%PATH%
+set DATAPATH="c:\MCNP\MCNP_DATA"
 
 cd /d %~dp1
 start mcnp6.exe inp=%*
