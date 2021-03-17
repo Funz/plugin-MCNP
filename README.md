@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Funz/plugin-MCNP.png)](https://travis-ci.org/Funz/plugin-MCNP)
+[![.github/workflows/ant.yml](https://github.com/Funz/plugin-MCNP/actions/workflows/ant.yml/badge.svg)](https://github.com/Funz/plugin-MCNP/actions/workflows/ant.yml)
 
 # Funz plugin: MCNP
 
