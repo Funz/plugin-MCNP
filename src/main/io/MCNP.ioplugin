@@ -3,7 +3,7 @@ variableLimit=(...)
 formulaStartSymbol=@
 formulaLimit={...}
 
-commentLineChar=$
+commentLineChar=C 
 
 datasetFilter=contains("(.*)","KCODE") || contains("(.*)","kcode")
 

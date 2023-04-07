@@ -10,7 +10,7 @@ It supports the following syntax and features:
     * parameter syntax: 
       * variable syntax: `%(...)`
       * formula syntax: `@{...}`
-      * comment char: `$`
+      * comment char: `C ` (note that it holds two chars)
     * example input file:
         ```
         Godiva-type critical reactor and kcode example
